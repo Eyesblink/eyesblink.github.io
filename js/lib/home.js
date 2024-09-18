@@ -8,7 +8,9 @@ mixins.home = {
     },
     methods: {
         homeClick() {
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+            window.scrollTo({ top:   window.innerHeight, behavior: "smooth" });
+            window.removeEventListener('wheel', disableScroll);
+            document.body.style.overflowY = 'auto';
         },
     },
 };

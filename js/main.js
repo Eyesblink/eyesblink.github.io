@@ -24,6 +24,7 @@ const app = Vue.createApp({
             for (let i of this.renderers) i();
         },
         handleScroll() {
+            
             let wrap = this.$refs.homePostsWrap;
             let newScrollTop = document.documentElement.scrollTop;
             if (this.scrollTop < newScrollTop) {
