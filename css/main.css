@@ -163,8 +163,8 @@
 }
 #home-head #home-background {
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    
     height: 100vh;
     left: 0;
     position: absolute;
